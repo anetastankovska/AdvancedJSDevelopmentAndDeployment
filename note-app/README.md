@@ -63,7 +63,7 @@ To execute your Script, use the ‘npm run <NAME-OF-YOUR-SCRIPT>’ command. Som
 
 ## Installing the JetBrains mono font
 
-Follow the instructions on https://www.jetbrains.com/lp/mono/
-Go to Preferences/Settings → Editor → Font and change the following properties:
-"editor.fontFamily": "JetBrains Mono"
+Follow the instructions on https://www.jetbrains.com/lp/mono/\
+Go to Preferences/Settings → Editor → Font and change the following properties:\
+"editor.fontFamily": "JetBrains Mono"\
 "editor.fontLigatures": true (to use the fancy ligatures :) )
