@@ -33,35 +33,37 @@ And nodemon will be installed globally to your system path.
 -You can also install nodemon as a development dependency:
 npm install --save-dev nodemon # or using yarn: yarn add nodemon -D
 
-With a local installation, nodemon will not be available in your system path or you can't use it directly from the command line. Instead, the local installation of nodemon can be run by calling it from within an npm script (such as npm start) or using npx nodemon.
-*nodemon wraps your application, so you can pass all the arguments you would normally pass to your app.
-To use nodemon, replace the word node on the command line when executing your script.
+With a local installation, nodemon will not be available in your system path or you can't use it directly from the command line.\Instead, the local installation of nodemon can be run by calling it from within an npm script (such as npm start) or using npx nodemon.
+*nodemon wraps your application, so you can pass all the arguments you would normally pass to your app.\
+To use nodemon, replace the word node on the command line when executing your script: 
+```
 nodemon [your node app]
-
-
+```
 
 
 ## Dependencies vs DevDependencies
-"dependencies": Packages required by your application in production.
-"devDependencies": Packages that are only needed for local development and testing.
+"dependencies": Packages required by your application in production.\
+"devDependencies": Packages that are only needed for local development and testing.\
 *You can check all the installed packages and dependencies in the package.json file
 
 ## package.json scripts
-An npm script is a convenient way to bundle common shell commands like a set of built-in and custom scripts for your project. They are typically terminal commands or a string of terminal commands that help automate repetitive tasks. 
-In short, NPM scripts are terminal commands that perform a set of actions. 
-In a project, scripts are stored in a section of the package.json file, which means they are shared amongst everyone using the codebase, ensuring that everyone is using the same command with similar flags. 
+An npm script is a convenient way to bundle common shell commands like a set of built-in and custom scripts for your project. They are typically terminal commands or a string of terminal commands that help automate repetitive tasks.\
+In short, NPM scripts are terminal commands that perform a set of actions.\
+In a project, scripts are stored in a section of the package.json file, which means they are shared amongst everyone using the codebase, ensuring that everyone is using the same command with similar flags.\
 
 To define an NPM script, set its name and write the script under the ‘scripts’ property of your package.json file:
+```
 "scripts": {
     "start": "node index.js",
     "dev": "nodemon index.js"
   }
+```
 To execute your Script, use the ‘npm run <NAME-OF-YOUR-SCRIPT>’ command. Some predefined aliases convert to npm run, like npm test or npm start, you can use them interchangeably. 
 
 
 ## Installing the JetBrains mono font
 
 Follow the instructions on https://www.jetbrains.com/lp/mono/
-Go to Preferences/Settings → Editor → Font and change the following properties
+Go to Preferences/Settings → Editor → Font and change the following properties:
 "editor.fontFamily": "JetBrains Mono"
 "editor.fontLigatures": true (to use the fancy ligatures :) )
